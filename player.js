@@ -68,7 +68,7 @@ class Player {
     shoot() {
         this.bullets.push(new Bullet(this.x + this.width / 2, this.y, -50));
         this.bulletsFired++;
-        this.shootSound.play();
+        //this.shootSound.play(); // The sound file is pretty loud, will fix
     }
 
     draw(ctx) {
@@ -91,4 +91,5 @@ class Player {
 
         ctx.restore(); // Restore state so other objects don't draw flipped
     }
+
 }
